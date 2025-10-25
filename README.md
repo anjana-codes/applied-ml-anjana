@@ -1,4 +1,4 @@
-# applied-ml-template
+# applied-ml-anjana
 
 > Use this repo to start a professional Python project.
 
@@ -14,9 +14,8 @@
 ---
 
 ## About this Repository
-
+This repository contains the starter files and setup for the Applied Machine Learning project.
 Starter files for the example labs:
-
 - notebooks/example01 folder
 - notebooks/example02 folder
 
@@ -25,7 +24,7 @@ Starter files for the example labs:
 Each project will be completed in its own folder.
 
 - notebooks/project01 folder:
-  - ml01.ipynb - COMPLETE THIS
+  - ml01.ipynb - updated with codes 
   - ml01.py - working script with just the code
   - README.md - instructions - modify this to present your lab project
 
@@ -181,3 +180,5 @@ With a working version safe in GitHub, start making changes to the code.
 Before starting a new session, remember to do a `git pull` and keep your tools updated.
 
 Each time forward progress is made, remember to git add-commit-push.
+
+
