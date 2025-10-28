@@ -90,3 +90,4 @@ data/Housing.csv
 
 # Ignore project notebooks
 notebooks/project01/custom_project.ipynb
+notebooks/example02/lab2_starter.ipynb
