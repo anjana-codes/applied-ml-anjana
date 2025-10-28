@@ -85,5 +85,8 @@ site/
 .cache/
 
 # Ignore data files
+data/
 data/Housing.csv
-notebook/project01/custom_project.ipynb
+
+# Ignore project notebooks
+notebooks/project01/custom_project.ipynb
