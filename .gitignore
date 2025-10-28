@@ -83,3 +83,7 @@ site/
 .mypy_cache/
 .pytype/
 .cache/
+
+# Ignore data files
+data/Housing.csv
+notebook/project01/custom_project.ipynb
