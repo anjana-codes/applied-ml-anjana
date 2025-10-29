@@ -103,11 +103,12 @@ uv run pytest
 
 ## Folder Structure 
 
+```shell
 notebooks/
   └── project02/
         ├── ml02_anjana.ipynb
         ├── README.md
-
+```
 ## Steps for the project
 1. Import and Inspect Data
 - Loaded Titanic dataset
