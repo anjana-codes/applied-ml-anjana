@@ -89,5 +89,7 @@ data/
 data/Housing.csv
 
 # Ignore project notebooks
+notebooks/example01/lab1_starter_example.ipynb
 notebooks/project01/custom_project.ipynb
 notebooks/example02/lab2_starter.ipynb
+notebooks/example02/lab3_starter.ipynb
