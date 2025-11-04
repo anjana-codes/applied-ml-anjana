@@ -1,5 +1,8 @@
 # Project 02
-# Title: Titanic Dataset Analysis
+# Title: Anjana-Titanic Dataset Analysis
+**Name:** Anjana Dhakal  
+**Date:** 10/28/2025  
+
 
 ## Overview
 This project analyzes the Titanic dataset to explore relationships between passenger characteristics and survival outcomes. The analysis includes data inspection, visualization, feature engineering, and dataset splitting techniques.
