@@ -10,7 +10,7 @@ site_name: Applied ML Project
 site_url: https://anjana-codes.github.io/applied-ml-anjana/
 repo_url: https://github.com/anjana-codes/applied-ml-anjana
 site_description: Professional applied ML project
-site_author: "Anjana Dhakal"
+site_author: Anjana Dhakal
 docs_dir: docs
 site_dir: site
 

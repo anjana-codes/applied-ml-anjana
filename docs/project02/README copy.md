@@ -145,6 +145,5 @@ git commit -m "describe your change in quotes"
 git push -u origin main
 ```
 
-## References: 
 
 
