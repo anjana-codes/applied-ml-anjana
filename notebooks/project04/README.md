@@ -163,12 +163,17 @@ notebooks/
 ## Summary Table of Model Performance
 
 
-| Model                        | R² (Test) | RMSE (Test) | MAE (Test) | 
-| ---------------------------- | --------- | ----------- | ---------- |
-| Linear Regression            | 0.050     | 37.08       | 24.28      | 
-| Ridge Regression             | 0.050     | 37.08       | 24.28      | 
-| ElasticNet Regression        | 0.054     | 36.99       | 24.21      | 
-| Polynomial Regression (deg3) | 0.064     | 36.79       | 23.14      | 
+| Model / Case                     | R² Train | R² Test | RMSE Train | RMSE Test | MAE Train | MAE Test |
+| -------------------------------- | -------- | ------- | ---------- | --------- | --------- | -------- |
+| **Case 1 – Age**                 | 0.010    | 0.003   | 51.92      | 37.97     | 28.89     | 25.29    |
+| **Case 2 – Family Size**         | 0.050    | 0.022   | 50.86      | 37.61     | 27.80     | 25.03    |
+| **Case 3 – Age + Family Size**   | 0.073    | 0.050   | 50.23      | 37.08     | 26.61     | 24.28    |
+| **Case 4 – Sex**                 | 0.024    | 0.099   | 51.55      | 36.10     | 28.42     | 24.24    |
+| **Linear Regression (All)**      | —        | 0.050   | —          | 37.08     | —         | 24.28    |
+| **Ridge Regression**             | —        | 0.050   | —          | 37.08     | —         | 24.28    |
+| **ElasticNet Regression**        | —        | 0.054   | —          | 36.99     | —         | 24.21    |
+| **Polynomial Regression (deg3)** | —        | 0.064   | —          | 36.79     | —         | 23.14    |
+
 
 
 ## 6. Final Thoughts & Insights
@@ -198,12 +203,18 @@ notebooks/
   - Skewed price distribution and outliers challenge linear models; log-transform recommended next
   - Generalization improves with more features but risks overfitting without regularization in complex setups
 
-| Case | Features                              | R²    | RMSE      | MAE       |
-| ---- | ------------------------------------- | ----- | --------- | --------- |
-| 1    | Area                                  | 0.191 | 1,627,983 | 1,187,236 |
-| 2    | Bedrooms + Bathrooms                  | 0.339 | 1,471,452 | 1,112,066 |
-| 3    | Area + Bedrooms + Bathrooms + Stories | 0.549 | 1,216,085 | 906,993   |
-| 4    | All features                          | 0.628 | 1,104,592 | 826,286   |
+| Model / Case                                  | R² Train | R² Test | RMSE Train | RMSE Test  | MAE Train | MAE Test   |
+| --------------------------------------------- | -------- | ------- | ---------- | ---------- | --------- | ---------- |
+| Linear Regression Case 1 (Age)                | 0.293    | 0.292   | 0.30       | 0.37       | 0.23      | 0.31       |
+| Linear Regression Case 2 (Family Size)        | 0.286    | 0.249   | 0.30       | 0.38       | 0.24      | 0.31       |
+| Linear Regression Case 3 (Age + Family Size)  | 0.521    | 0.511   | 0.24       | 0.31       | 0.19      | 0.25       |
+| Linear Regression Case 4 (Sex)                | 0.704    | 0.672   | 0.19       | 0.25       | 0.15      | 0.20       |
+| Ridge Regression (All features)               | —        | 0.628   | —          | 1104660.26 | —         | 825460.74  |
+| ElasticNet Regression (All features)          | —        | 0.609   | —          | 1132199.12 | —         | 820335.02  |
+| Polynomial Regression Degree 3 (All features) | —        | -11.321 | —          | 6353432.66 | —         | 1892334.80 |
+| Polynomial Regression Degree 8 (All features) | —        | -17.571 | —          | 7799893.78 | —         | 2181973.14 |
+
+
 
 **Insights:** Linear models with full features excel for interpretability; polynomials fail on multi-feature sets due to curse of dimensionality.
 
