@@ -214,10 +214,20 @@ notebooks/
 | Polynomial Regression Degree 3 (All Features)              | -        | -11.321 | -            | 6,353,432.66 | -            | 1,892,334.80 |
 | Polynomial Regression Degree 8 (All Features)              | -        | -17.571 | -            | 7,799,893.78 | -            | 2,181,973.14 |
 
+### After log transformation of price
+
+| Model                                                     |    R² |         RMSE |        MAE |                       
+| :-------------------------------------------------------- | ----: | -----------: | ---------: | 
+| Linear Regression (Area)                                  | 0.292 |        0.370 |      0.307 |
+| Linear Regression (Bedrooms + Bathrooms)                  | 0.249 |        0.381 |      0.307 |
+| Linear Regression (Area + Bedrooms + Bathrooms + Stories) | 0.511 |        0.307 |      0.245 | 
+| Linear Regression (All features)                          | 0.672 |        0.252 |      0.200 | 
+| Ridge Regression (All features)                           | 0.672 |        0.252 |      0.200 | 
+| Lasso Regression (All features)                           | 0.668 |        0.253 |      0.201 | 
+| ElasticNet Regression (All features)                      | 0.670 |        0.252 |      0.201 | 
 
 
-
-**Insights:** Linear models with full features excel for interpretability; polynomials fail on multi-feature sets due to curse of dimensionality.
+**Insights:**  The log transformation improved R² and reduced error values substantially, showing that it successfully normalized the price distribution.
 
 
 ## Git add-commit-push to GitHub
