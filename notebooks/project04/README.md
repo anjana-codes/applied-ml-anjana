@@ -203,16 +203,17 @@ notebooks/
   - Skewed price distribution and outliers challenge linear models; log-transform recommended next
   - Generalization improves with more features but risks overfitting without regularization in complex setups
 
-| Model / Case                                  | R² Train | R² Test | RMSE Train | RMSE Test  | MAE Train | MAE Test   |
-| --------------------------------------------- | -------- | ------- | ---------- | ---------- | --------- | ---------- |
-| Linear Regression Case 1 (Age)                | 0.293    | 0.292   | 0.30       | 0.37       | 0.23      | 0.31       |
-| Linear Regression Case 2 (Family Size)        | 0.286    | 0.249   | 0.30       | 0.38       | 0.24      | 0.31       |
-| Linear Regression Case 3 (Age + Family Size)  | 0.521    | 0.511   | 0.24       | 0.31       | 0.19      | 0.25       |
-| Linear Regression Case 4 (Sex)                | 0.704    | 0.672   | 0.19       | 0.25       | 0.15      | 0.20       |
-| Ridge Regression (All features)               | —        | 0.628   | —          | 1104660.26 | —         | 825460.74  |
-| ElasticNet Regression (All features)          | —        | 0.609   | —          | 1132199.12 | —         | 820335.02  |
-| Polynomial Regression Degree 3 (All features) | —        | -11.321 | —          | 6353432.66 | —         | 1892334.80 |
-| Polynomial Regression Degree 8 (All features) | —        | -17.571 | —          | 7799893.78 | —         | 2181973.14 |
+| Model / Case                                               | R² Train | R² Test | RMSE Train   | RMSE Test    | MAE Train    | MAE Test     |
+| ---------------------------------------------------------- | -------- | ------- | ------------ | ------------ | ------------ | ------------ |
+| Linear Regression Case 1 (Area)                            | 0.308    | 0.191   | 1,565,947.64 | 1,627,983.06 | 1,162,351.89 | 1,187,235.73 |
+| Linear Regression Case 2 (Bedrooms+Bathrooms)              | 0.293    | 0.339   | 1,582,467.00 | 1,471,452.06 | 1,199,538.75 | 1,112,066.46 |
+| Linear Regression Case 3 (Area+Bedrooms+Bathrooms+Stories) | 0.530    | 0.549   | 1,289,676.32 | 1,216,084.85 | 935,434.26   | 906,992.67   |
+| Linear Regression Case 4 (All Features)                    | 0.690    | 0.628   | 1,048,341.04 | 1,104,591.76 | 766,284.12   | 826,286.47   |
+| Ridge Regression (All Features)                            | -        | 0.628   | -            | 1,104,660.26 | -            | 825,460.74   |
+| ElasticNet Regression (All Features)                       | -        | 0.609   | -            | 1,132,199.12 | -            | 820,335.02   |
+| Polynomial Regression Degree 3 (All Features)              | -        | -11.321 | -            | 6,353,432.66 | -            | 1,892,334.80 |
+| Polynomial Regression Degree 8 (All Features)              | -        | -17.571 | -            | 7,799,893.78 | -            | 2,181,973.14 |
+
 
 
 
