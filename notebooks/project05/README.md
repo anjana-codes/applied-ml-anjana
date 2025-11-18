@@ -159,19 +159,12 @@ My Test Results
 | Random Forest (100)       | 1.000000       | 0.887500      | 0.112500     | 1.000000  | 0.866056  | 0.133944 |
 | Gradient Boosting (100)   | 0.960125       | 0.856250      | 0.103875     | 0.958410  | 0.841106  | 0.117304 |
 
-Peer Comparison – Alissa’s Test Results
-
-| Model                     | Train Accuracy | Test Accuracy | Train F1  | Test F1   | Acc_Gap  | F1_Gap   |
-|---------------------------|----------------|---------------|-----------|-----------|----------|----------|
-| Voting (DT + SVM + NN)    | 0.917905       | 0.865625      | 0.900570  | 0.842276  | 0.052280 | 0.058294 |
-| Gradient Boosting (100)   | 0.960125       | 0.856250      | 0.958410  | 0.841106  | 0.103875 | 0.117304 |
 
 
-7.  Final Thoughts & Insights
+1.  Final Thoughts & Insights
 
    - Random Forest achieves highest test accuracy (0.8875) and F1 (0.8661) but overfits (perfect training).
    - Gradient Boosting provides slightly lower accuracy (~0.856) but better generalization (smaller gaps).
-   - Alissa’s Voting Ensemble shows the most balanced performance with smallest gaps, demonstrating robustness.
    - Preferred Model: Gradient Boosting for reliability and interpretability.
 
 
